@@ -18,7 +18,7 @@ app.use('/api/admin', adminRoutes);
 const taskRoutes = require('./routes/taskRoutes');
 app.use('/api/tasks', taskRoutes);
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('SmartTask API is running 🎯');
 });
 
